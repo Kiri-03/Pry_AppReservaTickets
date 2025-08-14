@@ -22,6 +22,5 @@ Route::middleware('auth:sanctum')->group(function () {
 });
 
 Route::get('/flights/search', [FlightController::class, 'search'])
-    ->middleware('auth:sanctum')
     ->name('flights.search');
 
